@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link href="cssforcalcu.css" rel="stylesheet" type="text/css">
+    </head>
+<body>
+    <section>
+        <div class="container">
+            <div class="output">
+                <input  type="text" id="screen">
+            </div>
+                <div  class="keys">
+                    <input class="buttons"  type="button" name = "nine" onclick="display('9')" value="9" >
+                    <input class="buttons" type="button" name = "eight" onclick="display('8')" value="8" > 
+                    <input class="buttons" type="button" name = "seven" onclick="display('7')" value="7" > 
+                    <input style="color: chocolate;" class="buttons" type="button" name = "divide" onclick="display('/')" value="/" ><br>
+                    <input class="buttons" type="button" name = "six" onclick="display('6')" value="6"> 
+                    <input class="buttons" type="button" name = "five" onclick="display('5')" value="5">
+                    <input class="buttons" type="button" name = "four" onclick="display('4')" value="4">
+                    <input style="color: chocolate;" class="buttons" type="button" name = "multipy" onclick="display('*')" value="*"><br>
+                    <input class="buttons" type="button" name = "three" onclick="display('3')" value="3">
+                    <input class="buttons" type="button" name = "two" onclick="display('2')" value="2">
+                    <input class="buttons" type="button" name = "one" onclick="display('1')" value="1">
+                    <input style="color: chocolate;" class="buttons" type="button" name = "subtract" onclick="display('-')" value="-"><br>
+                    <input style="color: chocolate;" class="buttons" type="button" name = "clear" onclick="clearss()"  value="C">
+                    <input class="buttons" type="button" name = "zero" onclick="display('0')" value="0">
+                    <input style="color: chocolate;" class="buttons" type="button" name = "point" onclick="display('.')" value=".">
+                    <input style="color: chocolate;" class="buttons" type="button" name = "equalsto" onclick="calculate()" value="=">
+                </div>    
+            </div>
+        </div>
+    </section>
+
+<script src="calcufn.js"></script>
+</body>    
+</html>
