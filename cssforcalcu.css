@@ -1,37 +1,104 @@
-body{
-    text-align: center;
-    background-color:black;
-}
-.container {
-background-color: rgb(49, 47, 47);
-border: 3px solid rgb(49, 45, 45);
-/* box-shadow: 0 12px 13px 0 rgba(218, 211, 211, 0.244),0 12px 25px 0 rgba(193, 179, 179, 0.19); */
-border-radius: 9px;
-width : 400px;
-height : 350px ;
-margin-top: 100px;
-margin-left: 550px;
-}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    margin-top: 7vw;
+    background-color: #fafafa;
+    border-radius: 5px;
+    padding: 10px;
+    width: 450px;
+    height: 20vw;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
 
-#screen{
-    border : 2px solid black;
-    border-radius: 9px;
-    margin-top: 9px;;
-    margin-left: 7px;
-    width : 380px;
-    height : 68px ;
-    background-color : black;
-    color:white;
-    font-size: 30px;
-
-}
-.keys{
+  
+  .output input[type="text"] {
+    border-radius: 4px;
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    text-align: right;
+    padding-right: 10px;
+  }
+  
+  .keys {
     margin-top: 10px;
-}
-.buttons{
- color: black;
- font-size: 30px;
- width: 93px;
- height : 63px;
-}
-
+    text-align: center;
+  }
+  
+  .buttons {
+    margin: 3px;
+    background-color: #e6e6e6;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5vw;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+  }
+  
+  .buttons:hover {
+    background-color: #d9d9d9;
+  }
+  
+  .buttons:active {
+    background-color: #ccc;
+  }
+  
+  .buttons[name="equalsto"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .buttons[name="equalsto"]:hover {
+    background-color: #408040;
+  }
+  
+  .buttons[name="equalsto"]:active {
+    background-color: #3e8e41;
+  }
+  
+  .buttons[name="clear"] {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff704d;
+    color: white;
+  }
+  
+  .buttons[name="clear"]:hover {
+    background-color: #ff6347;
+  }
+  
+  .buttons[name="clear"]:active {
+    background-color: #e64d00;
+  }
+  
+  .buttons[name="multipy"],
+  .buttons[name="divide"],
+  .buttons[name="subtract"],
+  .buttons[name="point"],
+  .buttons[name="plus"] {
+    background-color: #80b3ff;
+    color: white;
+  }
+  
+  .buttons[name="multipy"]:hover,
+  .buttons[name="divide"]:hover,
+  .buttons[name="subtract"]:hover,
+  .buttons[name="point"]:hover,
+  .buttons[name="plus"]:hover {
+    background-color: #668cff;
+  }
+  
+  .buttons[name="multipy"]:active,
+  .buttons[name="divide"]:active,
+  .buttons[name="subtract"]:active,
+  .buttons[name="point"]:active,
+  .buttons[name="plus"]:active {
+    background-color: #4d79ff;
+  }
